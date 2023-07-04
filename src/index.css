@@ -1,0 +1,165 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 500;
+}
+
+
+
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+button {
+  cursor: pointer;
+  border-color: #865746;
+  border-radius: 10px;
+  outline: none;
+  background-color: rgba(246, 166, 69, 0.5);
+  padding: 10px 30px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: larger;
+  -webkit-transition: background-color;
+  transition: background-color;
+}
+
+button:hover{
+  background-color: rgba(246, 166, 69);
+}
+
+
+.projects{
+  border-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px 40px;
+  color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: background-color;
+  transition: background-color;
+  border-radius: 0 0 100px 100px;
+}
+
+.projects:hover{
+  background-color: rgb(255, 255, 255);
+}
+
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  flex-direction: column;
+  
+  
+
+}
+
+.card-phrases{
+  background-color: white;
+  width: 400px;
+  height: auto;
+  padding: 50px;
+  margin: 40px;
+  border: 3px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  border-bottom-right-radius: 100px;
+  box-shadow: 15px 20px 5px rgba(0, 0, 0, 0.3);  
+  -webkit-transition: 1s linear;
+  transition: 0.2s linear
+}
+
+.card-phrases:hover{
+  border-radius: 0px;
+}
+
+.card-text{
+  -webkit-transition: color;
+  transition: color;
+}
+
+.card-text:hover{
+  color: rgba(0, 0, 0, 0.549);
+}
+
+
+
+.tittle{
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px 1px black;
+  padding: 20px 0px 40px 0px;
+  width: 400px;
+  /* text-shadow: 5px 10px 5px rgba(0, 0, 0, 0.3); */
+  /* text-shadow: 
+    -3px -3px 0 rgba(246, 166, 69),
+    3px -3px 0 rgba(246, 166, 69),
+    -3px 3px 0 rgba(246, 166, 69),
+    3px 3px 0 rgba(246, 166, 69); */
+
+  -webkit-text-stroke: 3px rgba(246, 166, 69);
+  transition: all 0.3s ease-in-out;
+}
+
+.tittle:hover::after {
+  content: " - by Sandy Gómez";
+  -webkit-text-stroke: 0;
+  color: rgba(246, 166, 69);
+  font-weight: 700;
+  font-size: small;
+}
+
+.tittle:hover::before {
+  content: " PROYECTO 1 : ";
+  -webkit-text-stroke: 0;
+  color: rgba(246, 166, 69);
+  font-size: small;
+}
+
+
+@media screen and (min-width: 576px) {
+  .card-phrases{
+    width: 700px;
+    height: 200px;
+  }
+}
